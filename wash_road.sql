@@ -1,4 +1,4 @@
-create or replace function wa_road(pt varchar, fullname, pd varchar,name varchar,typ varchar,sd varchar) RETURNS varchar AS $$
+create or replace function wa_road(pt varchar, fullname varchar, pd varchar,name varchar,typ varchar,sd varchar) RETURNS varchar AS $$
 DECLARE
   full_name varchar;
 BEGIN
