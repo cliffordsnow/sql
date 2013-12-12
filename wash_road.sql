@@ -1,9 +1,9 @@
-create or replace function wa_road(pt varchar, fullname varchar, pd varchar,name varchar,typ varchar,sd varchar) RETURNS varchar AS $$
+﻿create or replace function wa_road(pt varchar, fullname varchar, pd varchar,name varchar,typ varchar,sd varchar) RETURNS varchar AS $$
 DECLARE
   full_name varchar;
 BEGIN
 	IF pt IS NOT NULL THEN
-		full_name := initcap(fullname) || '' || pt;
+		full_name := initcap(fullname);
 	ELSE
 		full_name := expand_direction(pd) || ' ';
 		full_name := full_name ||  initcap(name);
