@@ -1,4 +1,5 @@
-﻿create or replace function prop_name(fullname varchar) RETURNS varchar AS $$
+﻿## Need to fix names with a de such as Van de Vars and Colonel de Vars
+create or replace function prop_name(fullname varchar) RETURNS varchar AS $$
 DECLARE
   r varchar;
 BEGIN
@@ -21,6 +22,8 @@ BEGIN
 			WHEN 'MCKEAN' THEN 'McKean'
 			WHEN 'MCKINLEY' THEN 'McKinley'
 			WHEN 'MCLEAN' THEN 'McLean'
+			WHEN 'VAN DE VARS' THEN 'Van de Vars'
+			WHEN 'COLONEL DE VARS' THEN 'Colonel de Vars'
 		ELSE
 			initcap(fullname)
 	END;
