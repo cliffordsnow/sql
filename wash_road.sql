@@ -3,10 +3,10 @@ DECLARE
   full_name varchar;
 BEGIN
 	IF pt IS NOT NULL THEN
-		full_name := initcap(fullname);
+		full_name := prop_name(fullname);
 	ELSE
 		full_name := expand_direction(pd) || ' ';
-		full_name := full_name ||  initcap(name);
+		full_name := full_name ||  prop_name(name);
 		full_name := full_name || ' ' || expand_road(typ);
 		IF sd IS NOT NULL THEN
 			full_name := full_name || ' ' || expand_direction(sd);

@@ -63,6 +63,7 @@ BEGIN
 		WHEN    'SKWY' THEN 'Skyway'
 		WHEN    'SPUR' THEN 'Spur'
 		WHEN    'SQ' THEN 'Square'
+		WHEN	'SR' THEN 'State Route'
 		WHEN	'STCT' THEN 'Street Court'
 		WHEN    'ST' THEN 'Street'
 		WHEN    'TER' THEN 'Terrace'

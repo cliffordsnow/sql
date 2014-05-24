@@ -4,8 +4,10 @@ DECLARE
 BEGIN
 	
 	full_name := expand_direction(pd) || ' ';
-	full_name := full_name ||  initcap(name);
-	full_name := full_name || ' ' || expand_road(typ);
+	full_name := full_name ||  prop_name(name);
+	if typ IS NOT NULL THEN
+		full_name := full_name || ' ' || expand_road(typ);
+	END IF;
 	IF sd IS NOT NULL THEN
 		full_name := full_name || ' ' || expand_direction(sd);
 	END IF;
