@@ -8,6 +8,7 @@ BEGIN
 		WHEN	'AL' THEN 'Alley'
 		WHEN    'ALY' THEN 'Alley'
 		WHEN    'ARC' THEN 'Arcade'
+		WHEN	'AV' THEN 'Avenue'
 		WHEN    'AVE' THEN 'Avenue'
 		WHEN    'BLF' THEN 'Bluff'
 		WHEN    'BLVD' THEN 'Boulevard'
