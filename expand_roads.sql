@@ -44,6 +44,7 @@ BEGIN
 		WHEN    'MAL' THEN 'Mall'
 		WHEN    'MTWY' THEN 'Motorway'
 		WHEN    'OVAL' THEN 'Oval'
+		WHEN    'OPAS' THEN 'Overpass'
 		WHEN    'OVPS' THEN 'Overpass'
 		WHEN	'PARK' THEN 'Park'
 		WHEN    'PASS' THEN 'Pass'
