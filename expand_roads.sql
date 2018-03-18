@@ -1,4 +1,4 @@
-create or replace function expand_road(n varchar) RETURNS varchar as $$
+﻿create or replace function expand_road(n varchar) RETURNS varchar as $$
 DECLARE
   r varchar;
 BEGIN
@@ -88,6 +88,7 @@ BEGIN
 		WHEN    'WAY' THEN 'Way'
 		WHEN    'WKWY' THEN 'Walkway'
 		WHEN    'XING' THEN 'Crossing'
+		ELSE n
 		
 		END;
 	RETURN r;

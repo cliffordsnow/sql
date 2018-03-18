@@ -4,7 +4,7 @@ DECLARE
 BEGIN
 	
 	full_name := expand_direction(pd) || ' ';
-	full_name := full_name ||  prop_name(name);
+	full_name := full_name ||  proper_case(name);
 	if typ IS NOT NULL THEN
 		full_name := full_name || ' ' || expand_road(typ);
 	END IF;
