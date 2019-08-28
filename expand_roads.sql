@@ -15,6 +15,7 @@ BEGIN
 		WHEN    'BR' THEN 'Bridge'
 		WHEN    'BRG' THEN 'Bridge'
 		WHEN    'BYP' THEN 'Bypass'
+		WHEN	'CDS' THEN 'Cul-de-sac'
 		WHEN    'CIR' THEN 'Circle'
 		WHEN	'CMNS' THEN 'Commons'
 		WHEN	'CONC' THEN 'Concession'
