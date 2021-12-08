@@ -2,6 +2,7 @@
     BEGIN
          CASE 
 	    WHEN e ILIKE 'iD%' THEN RETURN 'iD';
+	    WHEN e ILIKE 'RapiD%' THEN RETURN 'RapiD';
 	    WHEN e ILIKE 'JOSM%' THEN RETURN 'JOSM';
 	    WHEN e ILIKE 'reverter;JOSM%' THEN RETURN 'JOSM';
 	    WHEN e ILIKE 'OsmAnd%' THEN RETURN 'OsmAnd';
